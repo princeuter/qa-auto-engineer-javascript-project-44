@@ -1,4 +1,5 @@
 #!/usr/bin/env node
+
 import readlineSync from 'readline-sync';
 import name from '../src/cli.js';
 
@@ -36,7 +37,7 @@ function main() {
       console.log('Correct!');
       correctAnswers += 1;
     } else {
-      console.log(`'${userAnswer}' is wrong answer ;(. Correct answer was '${correctAnswer}'. \n Let's try again, ${player}!`);
+      console.log(`'${userAnswer}' is wrong answer ;(. Correct answer was '${correctAnswer}'. \nLet's try again, ${player}!`);
       break;
     }
   }
