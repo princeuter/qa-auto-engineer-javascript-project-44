@@ -18,14 +18,15 @@ for (let i = 1; i<=3; i++) {
     const b = Math.floor(Math.random() * 100) + 1;
     const sign = randomChar ('+-*')
     const calc = `${a} ${sign} ${b}`
-    console.log (`Question : ${calc}`)
+    console.log (`Question: ${calc}`)
     const answer = readlineSync.question('Your answer: ');
     const check = global.eval(calc)
     if (`${answer}` === `${check}`) {
         console.log (`Correct!`)
         counter++  
     } else { 
-        console.log (`'${answer}' is wrong answer ;(. Correct answer was 'no'. \n Let's try again, ${player}!`)
+        console.log (`'${answer}' is wrong answer ;(. Correct answer was 'no'. \nLet's try again, ${player}!`)
+        break;
     }
 }   
-if (counter ===3) console.log (`Congratulations, ${player} !`)
+if (counter ===3) console.log (`Congratulations, ${player}!`)
