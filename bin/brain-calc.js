@@ -10,7 +10,7 @@ const randomChar = (chars) => {
 
 console.log ('Welcome to the Brain Games!')
 const player = name()
-console.log (`Hello, ${player} !`)
+// console.log (`Hello, ${player} !`)
 console.log ('What is the result of the expression?')
 let counter = 0
 for (let i = 1; i<=3; i++) {
