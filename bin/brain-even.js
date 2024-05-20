@@ -15,7 +15,8 @@ for (let i = 1; i <= 3; i += 1) {
       console.log('Correct!');
       counter += 1;
     } else {
-      console.log(`'${answer}' is wrong answer ;(. Correct answer was 'no'. \n Let's try again, ${player}!`);
+      console.log(`'${answer}' is wrong answer ;(. Correct answer was 'no'. \nLet's try again, ${player}!`);
+      break;
     }
   } else if (answer === 'no') {
     if (!isEven) {
@@ -23,9 +24,11 @@ for (let i = 1; i <= 3; i += 1) {
       counter += 1;
     } else {
       console.log(`'${answer}' is wrong answer ;(. Correct answer was 'yes'. \nLet's try again, ${player}!`);
+      break;
     }
   } else {
     console.log(`'${answer}' is wrong answer ;(. Correct answer was 'yes'. \nLet's try again, ${player}!`);
+    break;
   }
 }
 if (counter === 3) console.log(`Congratulations, ${player}!`);
