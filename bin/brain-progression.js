@@ -27,7 +27,7 @@ function main() {
 
   for (let i = 0; i < rounds; i += 1) {
     const prog  = progression();
-    const hidden = randomNumber(5, prog.length -1);
+    const hidden = randomNumber(1, prog.length -1);
     const correctAnswer = prog[hidden];
     prog[hidden] = '..';
     console.log(`Question: ${prog.join(' ')}`);
