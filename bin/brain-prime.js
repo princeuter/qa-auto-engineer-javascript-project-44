@@ -6,10 +6,9 @@ import name from '../src/cli.js';
 // const readlineSync = require('readline-sync');
 
 const isPrime = (num) => {
-    for (let i = 2, s = Math.sqrt(num); i <= s; i += 1)
-        if (num % i === 0) return false; 
-    return num > 1;
-}
+  for (let i = 2, s = Math.sqrt(num); i <= s; i += 1) { if (num % i === 0) return false; }
+  return num > 1;
+};
 
 const randomNumber = (min, max) => Math.floor(Math.random() * (max - min + 1) + min);
 
@@ -40,5 +39,3 @@ function main() {
 }
 
 main();
-
-
