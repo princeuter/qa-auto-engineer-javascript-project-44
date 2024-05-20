@@ -28,4 +28,4 @@ for (let i = 1; i <= 3; i += 1) {
     console.log(`'${answer}' is wrong answer ;(. Correct answer was 'yes'. \n Let's try again, ${player}!`);
   }
 }
-if (counter === 3) console.log(`Congratulations, ${player} !`);
+if (counter === 3) console.log(`Congratulations, ${player}!`);
